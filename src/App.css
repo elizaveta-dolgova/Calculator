@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+html {
+    font-size: 10px;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainCard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #334E58;
+    position: relative;
+    padding: 3rem;
+    overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calcCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    background-color: #A9927D;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family:sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outputField {
+    width: 100%;
+    color: white;
+    background-color: #A9927D;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btnRow {
+    height: 8rem;
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    border: solid 0.5px #575960;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 25%;
+    background-color: white;
+    color: #6B6D76;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background-color:#6B6D76 ;
+    color: white;
+}
+
+button:active {
+    transform: scale(1.2);
+}
+
+.zero{
+    width: 50%;
+}
+ .btnOper {
+    background-color: white;
+    color: #FCBFB7
+}
+.btnOper:hover {
+    background-color:#FCBFB7;
+    color: white;
+}
+@media screen and (min-width: 480px) {
+    .calcCard {
+        width: 400px;
+    }
 }
