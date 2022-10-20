@@ -1,6 +1,6 @@
 Simple calculator in Typescript
 
-Deployed on: https://elizaveta-dolgova.github.io/Calculator.git
+Deployed on: https://elizaveta-dolgova.github.io/Calculator
 
 ## Available Scripts
 
